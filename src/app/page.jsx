@@ -43,9 +43,9 @@ export default function Home() {
       {search?.length > 0 && (
         <div className={styles.lastResults}>
           <p>Search history</p>
-          {search.map((result) => {
+          {search.map((result, i) => {
             return (
-              <Link href={`movie/${result}`}>
+              <Link href={`movie/${result}`} key={i}>
                 {result.replace(/%20/g, " ")}
               </Link>
             )

@@ -36,12 +36,22 @@ export default async function Movie({ params: { name } }) {
       <div className={styles.top}>
         <p className={styles.title}>{Title}</p>
         <div className={styles.coverImg}>
-          <Image src={Poster} width={1440} height={1440} />
+          <Image
+            src={Poster}
+            width={1440}
+            height={1440}
+            alt={`${name} cover`}
+          />
         </div>
       </div>
       <div className={styles.bottom}>
         <div className={styles.poster}>
-          <Image src={Poster} width={1440} height={1440} />
+          <Image
+            src={Poster}
+            width={1440}
+            height={1440}
+            alt={`${name} cover`}
+          />
         </div>
         <div className={styles.details}>
           <p className={styles.plot}>{Plot}</p>
