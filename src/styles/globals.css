@@ -1,0 +1,55 @@
+:root {
+  --gray50: #ebeef5;
+  --gray300: #8e95a9;
+  --gray100: #c3c8d4;
+  --warning500: #ffad49;
+  --gray400: #767e94;
+  --error500: #ff6161;
+  --tertary400: #c58aff;
+  --primary400: #4bb7fd;
+  --gray600: #475069;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+html,
+body {
+  font-size: 8px;
+  max-width: 100vw;
+  background-image: url(../../public/Background.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(50px);
+}
+
+.container {
+  max-width: 1440px;
+  min-height: 100vh;
+  margin: 0 2.5rem;
+  font-size: 2.25rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    margin: 0 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    margin: 0 8rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    margin: 0 8rem;
+    display: flex;
+    justify-content: center;
+  }
+}
